@@ -3,9 +3,9 @@ $(document).ready(function () {
 	$('input[type=checkbox]').change(
 		function(){
 			if (this.checked) {
-				alert('checked');
+				var amenId = $(this).data('id');
 			}
-			else if (!this.checked) {
+			else {
 				alert('unchecked');
 			}
 		});
